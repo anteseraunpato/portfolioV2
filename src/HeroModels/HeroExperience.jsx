@@ -3,7 +3,6 @@ import { OrbitControls } from '@react-three/drei'
 import { useMediaQuery } from 'react-responsive';
 import { Room } from './Room';
 import HeroLights from './HeroLights';
-import { Lost_programmer } from './Lost_programmer';
 
 const HeroExperience = () => {
   const isTablet = useMediaQuery({query: '(max-width: 1024px'});
