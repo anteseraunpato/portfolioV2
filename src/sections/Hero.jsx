@@ -14,7 +14,7 @@ const hero = () => {
         <header className='flex flex-col justify-center md:w-full w-screen md:px-20 px-5'>
             <div className='flex flex-col gap-7'>
                 <div className='hero-text'>
-                    <h1>Shaping 
+                    <h1>Transformo 
                         <span className="slide">
                             <span className="wrapper">
                                 {words.map((word) => (
@@ -27,16 +27,17 @@ const hero = () => {
                             </span>
                         </span>
                     </h1>
-                    <h1>into real projects</h1>
-                    <h1>that deliver ressults.</h1>
+                    <h1>en soluciones para</h1>
+                    <h1>mejorar el mundo.</h1>
                 </div>
 
                 <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-                    Hola Soy Jahir, esta es la descripción provisional de mi portafolio que más adelante voy a cambiar
+                    Hola Soy Jahir, estudio desarrollo y gestión de software y soy fan de la pizza con piña y tocino.
                 </p>
                 
                 <Button className="md:w-80 md:h-16 w-60 h-12" id="button"
                 text="Descargar CV" />
+                
             </div>
         </header>
 
