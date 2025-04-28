@@ -46,13 +46,19 @@ const ShowcaseSection = () => {
         {/* IZQUIERDA */}
         <div className='first-project-wrapper' ref={project1Ref}>
             <div className='image-wrapper'>
-                <img src="/images/project1.png" alt="Ryde" />
+                <img src="/images/project1.png" alt="Póliza Fácil" />
             </div>
             <div className='text-content'>
-                <h2>On demand rides made simple with a powerful user friendly app called RYde</h2>
+                <h2>Póliza Fácil</h2>
                 <p>
-                    An app created with reacr native, expo, tailwind, y otras cosas
+                    Un sistema de Gestión de pólizas de egreso creado usando Java y Springboot
                 </p>
+
+                <a href="#" className='link-btn group'>
+                <div className='inner'>
+                    <span>ver proyecto</span>
+                </div>
+            </a>
             </div>
         </div>
         
