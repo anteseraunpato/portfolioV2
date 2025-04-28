@@ -1,8 +1,16 @@
 import { words } from "../../public/constants"
+import AnimatedCounter from "../components/AnimatedCounter";
 import Button from "../components/Button"
-import HeroExperience from "../HeroModels/HeroExperience"
+import HeroExperience from "../components/HeroModels/HeroExperience"
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const hero = () => {
+
+  useGSAP(() => {
+    gsap.fromTo('.hero-text h1', {y:50, opacity:0}, {y:0, opacity:1, stagger:0.2, duration:1, ease:'power2.inOut'},)
+  })
+
   return (
     <section className='relative overflow-hidden'>
       <div className='absolute top-0 left-0 z-10'>
@@ -37,7 +45,7 @@ const hero = () => {
                 </p>
                 
                 <Button className="md:w-80 md:h-16 w- h-12" id="button"
-                text="Descargar CV" />
+                text="Ver proyectos" />
                 
             </div>
         </header>
@@ -51,6 +59,9 @@ const hero = () => {
         </figure>
 
       </div>
+
+      <AnimatedCounter />
+      
     </section>
   )
 }
